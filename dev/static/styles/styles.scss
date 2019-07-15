@@ -50,7 +50,8 @@ button { outline: none; }
 
 .container {
   margin: 0 auto;
-  max-width: $content-size;
+  max-width: $desktop-size;
+  padding: 0 40px;
   width: 100%;
 }
 
