@@ -1,0 +1,8 @@
+@import "sandwich";
+
+.header {
+  &-main {
+    align-items: center;
+    display: flex;
+  }
+}
