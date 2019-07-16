@@ -1,8 +1,21 @@
 @import "sandwich";
 
 .header {
-  &-main {
-    align-items: center;
-    display: flex;
+
+}
+
+.header-main {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  &__image {
+    display: block;
+    margin-right: 57px;
   }
 }
