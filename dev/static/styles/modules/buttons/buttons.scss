@@ -1,0 +1,18 @@
+.button {
+  background-color: $button-color;
+  color: $white;
+  cursor: pointer;
+  display: flex;
+  font-family: $headline-font;
+  text-align: center;
+  text-transform: uppercase;
+  &--small {
+    align-items: center;
+    font-size: 14px;
+    height: 40px;
+    justify-content: center;
+    line-height: 18px;
+    //padding: 11px 10px;
+    width: 100%;
+  }
+}

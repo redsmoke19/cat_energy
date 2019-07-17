@@ -1,15 +1,22 @@
 .main-nav {
+  display: none;
   &__list {
-    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
   }
-  &__item {
-    font-family: 'oswald_medium', Arial, sans-serif;
+  &__link {
+    color: $headline-color;
+    border-top: 1px solid $border-color;
+    display: block;
+    font-family: $bold-font;
     font-size: 20px;
     line-height: 20px;
-    padding: 24px 0;
+    margin: 0 -20px 0 -20px;
+    padding: 22px 0;
     text-transform: uppercase;
   }
+  &--active { display: block; }
+  &--nojs { display: block }
 }
