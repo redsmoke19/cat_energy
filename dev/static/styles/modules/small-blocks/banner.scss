@@ -1,6 +1,6 @@
 .s-banner {
   &::before {
-    background: #63a73a url("/static/images/general/index-background-mobile1x.jpg") no-repeat center;
+    background: #65a93c url("/static/images/general/index-background-mobile1x.jpg") no-repeat center;
     content: "";
     height: 305px;
     opacity: 0.9;
@@ -8,7 +8,7 @@
     width: 100%;
     z-index: -1;
     @media screen and (-webkit-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("/static/images/general/index-background-mobile2x.jpg");
+      background-image: #65a93c url("/static/images/general/index-background-mobile2x.jpg");
       background-size: contain;
     }
   }

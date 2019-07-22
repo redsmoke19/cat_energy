@@ -1,6 +1,9 @@
 .sandwich {
+  border: none;
+  background-color: transparent;
   cursor: pointer;
   height: 18px;
+  padding: 0;
   position: relative;
   width: 24px;
   &--active {
@@ -27,5 +30,15 @@
     &--top { top: 0; }
     &--middle { top: 8px; }
     &--bottom { top: 16px; }
+  }
+  span { font-size: 0; }
+  //Увеличивает область клика на кнопку
+  &::before {
+    position:absolute;
+    content:'';
+    top:-5px;
+    right:-5px;
+    left:-5px;
+    bottom:-5px;
   }
 }
