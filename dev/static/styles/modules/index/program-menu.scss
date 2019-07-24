@@ -1,6 +1,6 @@
 .program-menu {
   &__programs {
-    background-color: $border-color;
+    background-color: $bg-lightgrey-color;
     padding: 20px;
     position: relative;
     &:not(:last-child) {
@@ -29,6 +29,9 @@
       top: 30px;
       left: 12px;
     }
+    &--right-arrow {
+      display: block;
+    }
   }
   &__title {
     color: $headline-color;
@@ -40,7 +43,7 @@
     text-transform: uppercase;
   }
   &__description {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     color: $text-color;
     font-family: $text-font;
     font-size: 14px;
@@ -49,11 +52,14 @@
     padding-bottom: 20px;
   }
   &__link {
+    align-items: center;
     color: $headline-color;
+    display: flex;
     font-size: 16px;
     font-family: $headline-font;
     font-weight: normal;
     line-height: 16px;
     text-transform: uppercase;
+    span { margin-right: 10px; }
   }
 }
