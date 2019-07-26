@@ -1,0 +1,39 @@
+.s-advantages { margin-bottom: 25px; }
+
+.advantages {
+  &__item {
+    align-items: center;
+    display: flex;
+    position: relative;
+    &:not(:last-child) { margin-bottom: 20px; }
+    &::before {
+      background: $bg-green-color;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 50px;
+      content: "";
+      display: block;
+      height: 60px;
+      min-width: 60px;
+      position: relative;
+      width: 60px;
+    }
+    &--clock::before { background-image: url("/static/images/general/clock-1x.png") }
+    &--powder::before { background-image: url("/static/images/general/powder-1x.png") }
+    &--knife::before { background-image: url("/static/images/general/knife-1x.png") }
+    &--leaflet::before { background-image: url("/static/images/general/leaflet-1x.png") }
+    @media screen and (-webkit-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      &--clock::before { background-image: url("/static/images/general/clock-2x.png") }
+      &--powder::before { background-image: url("/static/images/general/powder-2x.png") }
+      &--knife::before { background-image: url("/static/images/general/knife-2x.png") }
+      &--leaflet::before { background-image: url("/static/images/general/leaflet-2x.png") }
+    }
+  }
+  &__text {
+    color: $text-color;
+    font-family: $text-font;
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 20px;
+  }
+}

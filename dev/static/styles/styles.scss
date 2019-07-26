@@ -30,6 +30,11 @@ svg,
 video,
 textarea { vertical-align: middle; }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 textarea { resize: none; }
 
 section { position: relative; }

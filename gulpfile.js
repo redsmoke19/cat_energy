@@ -20,6 +20,7 @@ $.gulp.task('dev', $.gulp.series(
         'fonts',
         'styles:dev',
         'img:dev',
+        'cwebp:dev',
         'libsJS:dev',
         'js:dev',
         'svg'
