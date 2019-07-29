@@ -1,0 +1,29 @@
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+.contacts {
+  &__wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 25px 0;
+  }
+  &__dilers {
+    color: $headline-color;
+    font-family: $headline-font;
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 160px;
+    text-transform: uppercase;
+  }
+  &__address {
+    color: $text-color;
+    font-family: $text-font;
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 160px;
+    span { display: block; }
+  }
+}

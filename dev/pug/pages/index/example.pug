@@ -6,10 +6,10 @@ section.s-example
 			.example__wrapper
 				.example__progress
 					strong.example__total 5 кг
-					span.example__text снижение веса
+					span.example__footnote снижение веса
 				.example__progress
 					strong.example__total 60 дней
-					span.example__text затрачено времени
+					span.example__footnote затрачено времени
 			p.example__cost Затраты на питание: 15 000 руб.
 			.example__comparions.comparions
 				.comparions__picture
@@ -23,3 +23,9 @@ section.s-example
 						source(type="image/webp" srcset="/static/images/content/after-mobile1x.webp, /static/images/content/after-mobile2x.webp 2x")
 						source(media="(min-width: 768px)" srcset="/static/images/content/after-desktop1x.png 1x, /static/images/content/after-desktop2x.png 2x")
 						img.comparions__image.comparions__image--after(src="/static/images/content/after-mobile1x.png" srcset="/static/images/content/after-mobile2x.png 2x" width="320" height="240" alt="Фото кота Бориса до похудения")
+				.comparions__wrapper
+					button.comparions__buttons.comparions__buttons--before Было
+					.comparions__slick.comparions__slick--before
+						span.comparions__switch Кнопка переключения картинок До и После
+					button.comparions__buttons.comparions__buttons--after Стало
+
