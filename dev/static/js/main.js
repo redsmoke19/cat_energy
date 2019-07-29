@@ -11,15 +11,6 @@ $(document).ready(function () {
       });
   };
 
-  function initMap() {
-    var coordinates = {lat: 59.938808, lng: 30.323026},
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: coordinates,
-          zoom: 14
-        });
-  }
-
   sandwich();
-  initMap();
 
 });

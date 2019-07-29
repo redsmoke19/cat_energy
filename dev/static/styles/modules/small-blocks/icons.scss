@@ -11,4 +11,9 @@
     height: 11px;
     width: 24px;
   }
+  &-logo-footer {
+    height: 24px;
+    width: 128px;
+  }
+  &-vk, &-fb, &-insta, &-htmlacademy { fill: $social-color; }
 }
