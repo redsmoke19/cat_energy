@@ -2,20 +2,40 @@
 
 .header {
   border-bottom: 1px solid $border-color;
+  @media screen and (min-width: $tablet-size) {
+    border: none;
+    padding-top: 25px;
+  }
+  &__wrapper {
+    @media screen and (min-width: $tablet-size) {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }
 
 .header-main {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  height: 65px;
+  min-height: 65px;
+  @media screen and (min-width: $tablet-size) { min-height: auto; }
 }
 
 .logo {
   align-items: center;
   display: flex;
   &__image {
-    display: block;
     margin-right: 57px;
+    @media screen and (min-width: $tablet-size) {
+      margin-right: 0;
+      vertical-align: baseline;
+    }
+  }
+  &__text {
+    @media screen and (min-width: $tablet-size) {
+      display: none;
+    }
   }
 }

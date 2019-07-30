@@ -2,10 +2,18 @@
   &-slim {
     height: 50px;
     width: 35px;
+    @media screen and (min-width: $tablet-size) {
+      height: 194px;
+      width: 140px;
+    }
   }
   &-pro {
     height: 28px;
     width: 67px;
+    @media screen and (min-width: $tablet-size) {
+      height: 112px;
+      width: 268px;
+    }
   }
   &-right-arrow {
     height: 11px;

@@ -9,9 +9,10 @@
     width: 100%;
     z-index: -1;
     @media screen and (-webkit-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: #65a93c url("/static/images/general/index-background-mobile2x.jpg");
+      background: #65a93c url("/static/images/general/index-background-mobile2x.jpg") no-repeat center;
       background-size: contain;
     }
+    @media screen and (min-width: $tablet-size) { display: none; }
   }
 }
 
@@ -24,9 +25,21 @@
     margin-bottom: 30px;
     text-align: center;
     text-transform: uppercase;
+    @media screen and (min-width: $tablet-size) {
+      color: $headline-color;
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 20px;
+      padding-left: 90px;
+      text-align: left;
+    }
   }
   &__image {
     display: block;
     margin: 0 auto;
+    @media screen and (min-width: $tablet-size) {
+      height: 609px;
+      width: 709px;
+    }
   }
 }

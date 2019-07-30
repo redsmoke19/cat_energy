@@ -6,6 +6,9 @@
   padding: 0;
   position: relative;
   width: 24px;
+  @media screen and (min-width: $tablet-size) {
+    display: none;
+  }
   &--active {
     .sandwich__line {
       &--top {
@@ -32,6 +35,7 @@
     &--bottom { top: 16px; }
   }
   span { font-size: 0; }
+
   //Увеличивает область клика на кнопку
   &::before {
     position:absolute;

@@ -58,6 +58,9 @@ section { position: relative; }
   max-width: $desktop-size;
   padding: 0 20px;
   width: 100%;
+  @media screen and (min-width: $tablet-size) {
+    padding: 0 30px;
+  }
 }
 
 .visually-hidden {

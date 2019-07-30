@@ -8,11 +8,15 @@
     &:not(:last-child) {
       margin-bottom: 20px;
     }
+    @media screen and (min-width: $tablet-size) {
+      padding: 80px 285px 60px 50px;
+    }
   }
   &__header {
     align-items: center;
     display: flex;
     margin-bottom: 20px;
+    @media screen and (min-width: $tablet-size) { margin-bottom: 25px; }
   }
   &__image {
     background-color: $bg-green-color;
@@ -20,16 +24,29 @@
     height: 50px;
     margin-right: 20px;
     width: 50px;
+    @media screen and (min-width: $tablet-size) {
+      height: 200px;
+      position: absolute;
+      margin: 0;
+      right: 62px;
+      top: calc(50% - 100px);
+      width: 200px;
+    }
   }
   &__icon {
     position: absolute;
     &--slim {
       top: 17px;
       left: 28px;
+      @media screen and (min-width: $tablet-size) { top: -13px; }
     }
     &--pro {
       top: 30px;
       left: 12px;
+      @media screen and (min-width: $tablet-size) {
+        left: -37px;
+        top: 42px;
+      }
     }
     &--right-arrow {
       display: block;
@@ -43,6 +60,9 @@
     line-height: 37px;
     text-align: center;
     text-transform: uppercase;
+    @media screen and (min-width: $tablet-size) {
+      font-size: 36px;
+    }
   }
   &__description {
     border-bottom: 1px solid $border-dark-color;
@@ -52,6 +72,13 @@
     line-height: 18px;
     margin-bottom: 20px;
     padding-bottom: 20px;
+    @media screen and (min-width: $tablet-size) {
+      border: none;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 60px;
+      padding: 0;
+    }
   }
   &__link {
     align-items: center;
@@ -63,5 +90,10 @@
     line-height: 16px;
     text-transform: uppercase;
     span { margin-right: 10px; }
+    @media screen and (min-width: $tablet-size) {
+      font-size: 20px;
+      line-height: 20px;
+      span { margin-right: 25px; }
+    }
   }
 }

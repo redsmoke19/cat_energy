@@ -1,10 +1,22 @@
 .main-nav {
   display: none;
+  @media screen and (min-width: $tablet-size) {
+    display: block;
+  }
   &__list {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    @media screen and (min-width: $tablet-size) {
+      align-items: center;
+      flex-direction: row;
+    }
+  }
+  &__item {
+    @media screen and (min-width: $tablet-size) {
+      &:not(:last-child) { margin-right: 37px; }
+    }
   }
   &__link {
     color: $headline-color;
@@ -15,7 +27,28 @@
     line-height: 20px;
     margin: 0 -20px 0 -20px;
     padding: 22px 0;
+    position: relative;
     text-transform: uppercase;
+    &--active::after {
+      @media screen and (min-width: $tablet-size) {
+        background-color: $bg-green-color;
+        bottom: -5px;
+        content: "";
+        height: 2px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+      }
+    }
+    @media screen and (min-width: $tablet-size) {
+      border: none;
+      font-family: $headline-font;
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 25px;
+      margin: 0;
+      padding: 0;
+    }
   }
   &--active { display: block; }
   &--nojs { display: block }
