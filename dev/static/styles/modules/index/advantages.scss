@@ -1,6 +1,20 @@
-.s-advantages { margin-bottom: 25px; }
+.s-advantages {
+  margin-bottom: 25px;
+  @media screen and (min-width: $tablet-size) {
+    border-bottom: 1px solid $border-color;
+    margin-bottom: 50px;
+    padding-bottom: 55px;
+  }
+}
 
 .advantages {
+  &__list {
+    @media screen and (min-width: $tablet-size) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
   &__item {
     align-items: center;
     display: flex;
@@ -15,18 +29,94 @@
       display: block;
       height: 60px;
       min-width: 60px;
-      position: relative;
       width: 60px;
+      @media screen and (min-width: $tablet-size) {
+        height: 80px;
+        margin-bottom: 35px;
+        min-width: 80px;
+      }
     }
-    &--clock::before { background-image: url("/static/images/general/clock-1x.png") }
-    &--powder::before { background-image: url("/static/images/general/powder-1x.png") }
-    &--knife::before { background-image: url("/static/images/general/knife-1x.png") }
-    &--leaflet::before { background-image: url("/static/images/general/leaflet-1x.png") }
+    &::after {
+      @media screen and (min-width: $tablet-size) {
+        color: $bg-lightgrey-color;
+        font-family: $headline-font;
+        font-size: 281px;
+        line-height: 281px;
+        position: absolute;
+        z-index: -1;
+        top: -40px;
+        left: 118px;
+      }
+    }
+    &--clock {
+      &::after {
+        @media screen and (min-width: $tablet-size) {
+          content: "4";
+        }
+      }
+      &::before {
+        background-image: url("/static/images/general/clock-1x.png")
+      }
+    }
+    &--powder {
+      &::after {
+        @media screen and (min-width: $tablet-size) {
+          content: "2";
+        }
+      }
+      &::before {
+        background-image: url("/static/images/general/powder-1x.png")
+      }
+    }
+    &--knife {
+      &::after {
+        @media screen and (min-width: $tablet-size) {
+          content: "3";
+        }
+      }
+      &::before {
+        background-image: url("/static/images/general/knife-1x.png")
+      }
+    }
+    &--leaflet {
+      &::after {
+        @media screen and (min-width: $tablet-size) {
+          content: "1";
+        }
+      }
+      &::before {
+        background-image: url("/static/images/general/leaflet-1x.png")
+      }
+    }
     @media screen and (-webkit-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      &--clock::before { background-image: url("/static/images/general/clock-2x.png") }
-      &--powder::before { background-image: url("/static/images/general/powder-2x.png") }
-      &--knife::before { background-image: url("/static/images/general/knife-2x.png") }
-      &--leaflet::before { background-image: url("/static/images/general/leaflet-2x.png") }
+      &--clock {
+        &::before {
+          background-image: url("/static/images/general/clock-2x.png")
+        }
+      }
+      &--powder {
+        ::before {
+          background-image: url("/static/images/general/powder-2x.png")
+        }
+      }
+      &--knife {
+        &::before {
+          background-image: url("/static/images/general/knife-2x.png")
+        }
+      }
+      &--leaflet {
+        &::before {
+          background-image: url("/static/images/general/leaflet-2x.png")
+        }
+      }
+    }
+    @media screen and (min-width: $tablet-size) {
+      align-items: flex-start;
+      flex-basis: 48%;
+      flex-direction: column;
+      min-height: 228px;
+      &:not(:last-child) { margin-bottom: 0; }
+      &:not(:nth-last-child(-n+2)) { margin-bottom: 90px; }
     }
   }
   &__text {
@@ -35,5 +125,10 @@
     font-size: 14px;
     line-height: 18px;
     padding-left: 20px;
+    @media screen and (min-width: $tablet-size) {
+      font-size: 16px;
+      line-height: 24px;
+      padding: 0 105px 0 0;
+    }
   }
 }

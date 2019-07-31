@@ -1,4 +1,9 @@
-.s-program-menu { margin-bottom: 25px; }
+.s-program-menu {
+  margin-bottom: 25px;
+  @media screen and (min-width: $tablet-size) {
+    margin-bottom: 45px;
+  }
+}
 
 .program-menu {
   &__programs {

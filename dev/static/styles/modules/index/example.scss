@@ -1,6 +1,9 @@
 .s-example {
   background-color: $bg-lightgrey-color;
   padding-bottom: 35px;
+  @media screen and (min-width: $tablet-size) {
+    background-color: $white;
+  }
 }
 
 .example {
@@ -10,12 +13,28 @@
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 25px;
+    @media screen and (min-width: $tablet-size) {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 55px;
+      padding-right: 30px;
+    }
+  }
+  &__inner {
+    @media screen and (min-width: $tablet-size) {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
   }
   &__wrapper {
     align-items: center;
     display: flex;
     justify-content: space-between;
     margin-bottom: 35px;
+    @media screen and (min-width: $tablet-size) {
+      flex-basis: 52%;
+    }
   }
   &__progress {
     align-items: center;
@@ -26,6 +45,11 @@
     flex-direction: column;
     justify-content: center;
     padding: 12px 20px 0 20px;
+    @media screen and (min-width: $tablet-size) {
+      flex-basis: 46%;
+      padding: 16px 32px 0 32px;
+      max-width: 46%;
+    }
   }
   &__total {
     color: $headline-color;
@@ -36,6 +60,11 @@
     margin-bottom: 10px;
     text-align: center;
     text-transform: uppercase;
+    @media screen and (min-width: $tablet-size) {
+      font-size: 30px;
+      line-height: 37px;
+      white-space: nowrap;
+    }
   }
   &__footnote {
     background-color: $bg-lightgrey-color;
@@ -46,6 +75,14 @@
     line-height: 12px;
     text-align: center;
     margin-bottom: -16px;
+    @media screen and (min-width: $tablet-size) {
+      background-color: $white;
+      font-size: 14px;
+      line-height: 14px;
+      margin-bottom: -6px;
+      padding: 0 10px;
+      white-space: nowrap;
+    }
   }
   &__cost {
     color: $headline-color;
@@ -56,5 +93,12 @@
     margin-bottom: 40px;
     text-align: center;
     text-transform: uppercase;
+    br { display: none; }
+    @media screen and (min-width: $tablet-size) {
+      font-size: 20px;
+      line-height: 20px;
+      text-align: right;
+      br { display: block;}
+    }
   }
 }
