@@ -24,4 +24,18 @@
     width: 128px;
   }
   &-vk, &-fb, &-insta, &-htmlacademy { fill: $social-color; }
+  @media screen and (min-width: $tablet-size) {
+    &-vk {
+      height: 16px;
+      width: 30px;
+    }
+    &-fb {
+      height: 28px;
+      width: 14px;
+    }
+    &-insta {
+      height: 23px;
+      width: 23px;
+    }
+  }
 }

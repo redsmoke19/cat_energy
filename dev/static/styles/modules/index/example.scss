@@ -2,7 +2,8 @@
   background-color: $bg-lightgrey-color;
   padding-bottom: 35px;
   @media screen and (min-width: $tablet-size) {
-    background-color: $white;
+    background: linear-gradient(to top, $bg-lightgrey-color 42%, $white 30%);
+    padding-bottom: 70px;
   }
 }
 
@@ -25,6 +26,7 @@
       align-items: center;
       display: flex;
       justify-content: space-between;
+      margin-bottom: 100px;
     }
   }
   &__wrapper {
@@ -34,6 +36,7 @@
     margin-bottom: 35px;
     @media screen and (min-width: $tablet-size) {
       flex-basis: 52%;
+      margin-bottom: 0;
     }
   }
   &__progress {
@@ -97,6 +100,7 @@
     @media screen and (min-width: $tablet-size) {
       font-size: 20px;
       line-height: 20px;
+      margin-bottom: 0;
       text-align: right;
       br { display: block;}
     }

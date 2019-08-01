@@ -4,10 +4,24 @@ footer {
 
 .main-footer {
   background-color: $bg-lightgrey-color;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $tablet-size) {
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 58px 0;
+    }
+  }
   &__logo {
     border-bottom: 1px solid $border-dark-color;
     padding: 39px 0 31px 0;
     text-align: center;
+    @media screen and (min-width: $tablet-size) {
+      border: none;
+      padding: 0;
+    }
   }
   &__link { display: block; }
   &__copyright {
@@ -15,12 +29,16 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
+    @media screen and (min-width: $tablet-size) { padding: 0; }
   }
   &__academy {
     color: $text-color;
     font-family: $text-font;
     font-size: 16px;
     line-height: 16px;
+    @media screen and (min-width: $tablet-size) {
+      margin-right: 23px;
+    }
   }
 }
 
@@ -31,6 +49,10 @@ footer {
     display: flex;
     justify-content: center;
     padding: 20px 0;
+    @media screen and (min-width: $tablet-size) {
+      border: none;
+      padding: 0;
+    }
   }
   &__item {
     &:not(:last-child) { margin-right: 40px; }
