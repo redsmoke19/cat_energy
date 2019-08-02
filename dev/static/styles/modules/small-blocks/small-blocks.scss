@@ -20,6 +20,9 @@
       text-align: left;
       br { display: block; }
     }
+    @media screen and (min-width: $desktop-size) {
+      padding: 110px 0 0 85px;
+    }
   }
   &-block {
     color: $headline-color;

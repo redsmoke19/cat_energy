@@ -39,6 +39,10 @@
         position: absolute;
         width: 100%;
       }
+      @media screen and (min-width: $desktop-size) {
+        background-color: $white;
+        bottom: -8px;
+      }
     }
     @media screen and (min-width: $tablet-size) {
       border: none;
@@ -48,6 +52,11 @@
       line-height: 25px;
       margin: 0;
       padding: 0;
+    }
+    @media screen and (min-width: $desktop-size) {
+      color: $white;
+      font-size: 20px;
+      line-height: 25px;
     }
   }
   &--active { display: block; }

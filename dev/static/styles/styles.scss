@@ -55,12 +55,11 @@ section { position: relative; }
 
 .container {
   margin: 0 auto;
-  max-width: $desktop-size;
+  max-width: 100%;
   padding: 0 20px;
   width: 100%;
-  @media screen and (min-width: $tablet-size) {
-    padding: 0 30px;
-  }
+  @media screen and (min-width: $tablet-size) { padding: 0 30px; }
+  @media screen and (min-width: $desktop-size) { padding: 0 40px; }
 }
 
 .visually-hidden {

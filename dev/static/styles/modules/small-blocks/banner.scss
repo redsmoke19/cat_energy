@@ -13,7 +13,20 @@
       background-size: contain;
     }
     @media screen and (min-width: $tablet-size) { display: none; }
+    @media screen and (min-width: $desktop-size) {
+      background: #65a93c url("/static/images/general/index-background-desktop1x.jpg") no-repeat right;
+      display: block;
+      height: 696px;
+      width: 50%;
+      right: 0;
+      top: -88px;
+      @media screen and (-webkit-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background: url("/static/images/general/index-background-desktop2x.jpg") no-repeat right;
+        background-size: cover;
+      }
+    }
   }
+  @media screen and (min-width: $desktop-size) { margin-bottom: 370px; }
 }
 
 .banner {
@@ -33,6 +46,9 @@
       padding-left: 90px;
       text-align: left;
     }
+    @media screen and (min-width: $desktop-size) {
+      margin-bottom: 0;
+    }
   }
   &__image {
     display: block;
@@ -40,6 +56,25 @@
     @media screen and (min-width: $tablet-size) {
       height: 609px;
       width: 709px;
+    }
+    @media screen and (min-width: $desktop-size) {
+      height: 499px;
+      left: 37.8%;
+      position: absolute;
+      top: 12%;
+      width: 552px;
+    }
+  }
+  &__button {
+    @media screen and (min-width: $tablet-size) {
+      position: absolute;
+      top: 283px;
+      left: 120px;
+      width: 35%;
+    }
+    @media screen and (min-width: $desktop-size) {
+      top: 333px;
+      width: 20%;
     }
   }
 }
