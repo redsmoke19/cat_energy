@@ -32,6 +32,8 @@
       margin-right: 0;
       vertical-align: baseline;
     }
+    &:hover {opacity: 0.8; }
+    &:active { opacity: 0.6; }
   }
   &__text {
     @media screen and (min-width: $tablet-size) {

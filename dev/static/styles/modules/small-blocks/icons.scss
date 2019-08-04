@@ -6,6 +6,10 @@
       height: 194px;
       width: 140px;
     }
+    @media screen and (min-width: $desktop-size) {
+      height: 97px;
+      width: 70px;
+    }
   }
   &-pro {
     height: 28px;
@@ -13,6 +17,10 @@
     @media screen and (min-width: $tablet-size) {
       height: 112px;
       width: 268px;
+      @media screen and (min-width: $desktop-size) {
+        height: 56px;
+        width: 134px;
+      }
     }
   }
   &-right-arrow {

@@ -20,4 +20,6 @@
       line-height: 20px;
     }
   }
+  &:hover { background-color: $hover-green; }
+  &:active { color: rgba(255, 255, 255, 0.3); }
 }

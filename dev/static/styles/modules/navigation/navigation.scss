@@ -57,6 +57,8 @@
       color: $white;
       font-size: 20px;
       line-height: 25px;
+      &:hover { opacity: 0.6; }
+      &:active { opacity: 0.3; }
     }
   }
   &--active { display: block; }
