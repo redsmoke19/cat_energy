@@ -47,7 +47,8 @@
 .s-example {
   .title-block {
     @media screen and (min-width: $desktop-size) {
-      margin-bottom: 140px;
+      margin: 0;
+      padding: 60px 0 125px 0;
     }
   }
 }
