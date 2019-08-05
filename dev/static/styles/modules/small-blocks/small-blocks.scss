@@ -43,3 +43,11 @@
     }
   }
 }
+
+.s-example {
+  .title-block {
+    @media screen and (min-width: $desktop-size) {
+      margin-bottom: 140px;
+    }
+  }
+}

@@ -1,8 +1,7 @@
 .s-program-menu {
   margin-bottom: 25px;
-  @media screen and (min-width: $tablet-size) {
-    margin-bottom: 45px;
-  }
+  @media screen and (min-width: $tablet-size) { margin-bottom: 45px; }
+  @media screen and (min-width: $desktop-size) { margin-bottom: 70px; }
 }
 
 .program-menu {

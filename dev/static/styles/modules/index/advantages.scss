@@ -5,6 +5,11 @@
     margin-bottom: 50px;
     padding-bottom: 55px;
   }
+  @media screen and (min-width: $desktop-size) {
+    border: none;
+    margin-bottom: 85px;
+    padding: 0;
+  }
 }
 
 .advantages {
@@ -44,9 +49,12 @@
         line-height: 281px;
         position: absolute;
         z-index: -1;
+        right: 110px;
         top: -40px;
-        left: 118px;
       }
+      @media screen and (min-width: $desktop-size) {
+        right: 0;
+    }
     }
     &--clock {
       &::after {
@@ -118,6 +126,10 @@
       &:not(:last-child) { margin-bottom: 0; }
       &:not(:nth-last-child(-n+2)) { margin-bottom: 90px; }
     }
+    @media screen and (min-width: $desktop-size) {
+      flex-basis: 20%;
+      &:not(:nth-last-child(-n+2)) { margin-bottom: 0; }
+    }
   }
   &__text {
     color: $text-color;
@@ -129,6 +141,9 @@
       font-size: 16px;
       line-height: 24px;
       padding: 0 105px 0 0;
+    }
+    @media screen and (min-width: $desktop-size) {
+      padding-right: 50px;
     }
   }
 }
