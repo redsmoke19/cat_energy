@@ -22,6 +22,8 @@ footer {
       border: none;
       padding: 0;
     }
+    &:hover { opacity: 0.8; }
+    &:active { opacity: 0.6; }
   }
   &__link { display: block; }
   &__copyright {
@@ -29,6 +31,10 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
+    &:hover {
+      .icon-htmlacademy { fill: $bg-green-color; }
+    }
+    &:active { opacity: 0.3; }
     @media screen and (min-width: $tablet-size) { padding: 0; }
   }
   &__academy {

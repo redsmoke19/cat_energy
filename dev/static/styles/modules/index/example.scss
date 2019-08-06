@@ -121,18 +121,28 @@
     font-size: 14px;
     font-weight: normal;
     line-height: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 0;
     text-align: center;
     text-transform: uppercase;
+    span { padding-left: 5px;}
     br { display: none; }
     @media screen and (min-width: $tablet-size) {
       font-size: 20px;
       line-height: 20px;
       margin-bottom: 0;
       text-align: right;
+      span {
+        display: block;
+        padding: 10px 0 0 0;
+      }
       br { display: block;}
     }
     @media screen and (min-width: $desktop-size) {
+      padding-bottom: 6px;
+      span {
+        display: inline-block;
+        padding-left: 64px;
+      }
       br { display: none;}
     }
   }
@@ -162,23 +172,26 @@
   }
   &__picture {
     display: flex;
+    height: 310px;
     justify-content: center;
-    margin-bottom: 35px;
+    position: relative;
     @media screen and (min-width: $tablet-size) {
+      height: 500px;
       margin-bottom: 20px;
     }
     @media screen and (min-width: $desktop-size) {
-      height: 500px;
       margin-bottom: 40px;
     }
   }
   &__image {
-    @media screen and (min-width: $desktop-size) {
-      position: absolute;
-      top: 0;
-      left: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    @media screen and (min-width: $tablet-size) {
       margin: 0 auto;
-      right: 0;
     }
     &--before {
       @media screen and (min-width: $tablet-size) {
@@ -210,6 +223,7 @@
     background-color: transparent;
     border: none;
     color: $headline-color;
+    cursor: pointer;
     font-family: $headline-font;
     font-size: 16px;
     font-weight: normal;
@@ -221,6 +235,8 @@
       font-size: 20px;
       line-height: 20px;
       padding-bottom: 5px;
+      &:hover { border-bottom-style: solid; }
+      &:active { border: none; }
     }
   }
   &__slick {
@@ -269,6 +285,11 @@
         top: calc(50% - 4px);
         width: 8px;
       }
+    }
+    &:hover { box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25); }
+    &:active {
+      border: solid 2px $bg-green-color;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
     }
   }
 }
