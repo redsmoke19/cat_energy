@@ -2,7 +2,7 @@ header.header
 	.container
 		.header__wrapper
 			.header-main
-				a.header-main__logo.logo
+				a.header-main__logo.logo(href = pageClass === 'index-page' ? false : 'index.html')
 					picture
 						source(media="(min-width: 1300px)" srcset="/static/images/content/logo-desktop.svg")
 						source(media="(min-width: 768px)" srcset="/static/images/content/logo-tablet.svg")

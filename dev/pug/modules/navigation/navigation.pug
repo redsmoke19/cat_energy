@@ -1,8 +1,8 @@
 nav.header-nav.main-nav.main-nav--nojs
 	ul.main-nav__list
 		li.main-nav__item
-			a(href="").main-nav__link.main-nav__link--active Главная
+			a.main-nav__link.main-nav__link--active(href = pageClass === 'index-page' ? false : 'index.html') Главная
 		li.main-nav__item
-			a(href="").main-nav__link Каталог продукции
+			a.main-nav__link(href = pageClass === 'catalog-page' ? false : 'catalog.html') Каталог продукции
 		li.main-nav__item
 			a(href="").main-nav__link Подбор программы
