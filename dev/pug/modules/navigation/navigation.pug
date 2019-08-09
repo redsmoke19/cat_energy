@@ -1,8 +1,8 @@
 nav.header-nav.main-nav.main-nav--nojs
 	ul.main-nav__list
 		li.main-nav__item
-			a.main-nav__link.main-nav__link--active(href = pageClass === 'index-page' ? false : 'index.html') Главная
+			a.main-nav__link(class = pageClass === 'index-page' ? 'main-nav__link--active' : false href = pageClass === 'index-page' ? false : 'index.html') Главная
 		li.main-nav__item
-			a.main-nav__link(href = pageClass === 'catalog-page' ? false : 'catalog.html') Каталог продукции
+			a.main-nav__link(class = pageClass === 'catalog-page' ? 'main-nav__link--active' : false href = pageClass === 'catalog-page' ? false : 'catalog.html') Каталог продукции
 		li.main-nav__item
 			a(href="").main-nav__link Подбор программы

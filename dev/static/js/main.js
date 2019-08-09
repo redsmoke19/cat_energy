@@ -11,6 +11,8 @@ $(document).ready(function () {
       });
   };
 
+  sandwich();
+
   var slickBefore = document.querySelector('.comparions__buttons--before');
   var slickAfter = document.querySelector('.comparions__buttons--after');
   var slick = document.querySelector('.comparions__slick');
@@ -32,7 +34,5 @@ $(document).ready(function () {
     imageBefore.style.display = "none";
     imageAfter.style.display = "block";
   })
-
-  sandwich();
 
 });
