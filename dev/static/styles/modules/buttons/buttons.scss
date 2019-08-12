@@ -1,24 +1,27 @@
 .button {
+  align-items: center;
   background-color: $bg-green-color;
+  border: none;
   color: $white;
   cursor: pointer;
   display: flex;
   font-family: $headline-font;
+  font-size: 16px;
+  height: 40px;
+  justify-content: center;
+  line-height: 20px;
   position: relative;
   text-align: center;
   text-transform: uppercase;
+  width: 100%;
   &--small {
-    align-items: center;
     font-size: 14px;
-    height: 40px;
-    justify-content: center;
     line-height: 18px;
-    width: 100%;
-    @media screen and (min-width: $tablet-size) {
-      font-size: 20px;
-      height: 52px;
-      line-height: 20px;
-    }
+  }
+  @media screen and (min-width: $tablet-size) {
+    font-size: 20px;
+    height: 52px;
+    line-height: 20px;
   }
   &:hover { background-color: $hover-green; }
   &:active { color: rgba(255, 255, 255, 0.3); }
