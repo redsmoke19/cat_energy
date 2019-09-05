@@ -8,6 +8,27 @@
     line-height: 1;
     margin: 0 -20px 0 -20px;
     padding: 30px 0 30px 20px;
+    @media screen and (min-width: $tablet-size) {
+      border: none;
+      margin: 0 0 155px 0;
+      padding: 0;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $tablet-size) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  &__link {
+    @media screen and (min-width: $tablet-size) {
+      font-size: 16px;
+      height: 40px;
+      line-height: 20px;
+    }
   }
 }
 
@@ -16,18 +37,42 @@
   margin: 0 -20px 0 -20px;
   min-height: 210px;
   padding: 0 20px 25px 20px;
+  @media screen and (min-width: $tablet-size) {
+    border: none;
+    background-color: $bg-lightgrey-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 0 140px 0;
+    min-height: 440px;
+    padding: 0 38px 40px 38px;
+    width: 46%;
+  }
   &__row {
     align-items: center;
     display: flex;
+    @media screen and (min-width: $tablet-size) {
+      align-items: stretch;
+      flex-direction: column;
+    }
+  }
+  &__prev {
+    flex-basis: 50%;
+    @media screen and (min-width: $tablet-size) {
+      margin: -80px auto 40px auto;
+    }
   }
   &__col {
     flex-basis: 50%;
     max-width: 50%;
+    @media screen and (min-width: $tablet-size) {
+      max-width: 100%;
+    }
   }
   &__picture {
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
   &__title {
     color: $headline-color;
@@ -36,8 +81,21 @@
     font-weight: normal;
     line-height: 20px;
     margin-bottom: 15px;
-    padding-right: 30px;
+    max-width: 100px;
     text-transform: uppercase;
+    @media screen and (min-width: $tablet-size) {
+      font-size: 20px;
+      font-weight: normal;
+      line-height: 20px;
+      margin: 0 auto 30px auto;
+      text-align: center;
+      max-width: 130px;
+    }
+  }
+  &__optional {
+    @media screen and (min-width: $tablet-size) {
+      margin-bottom: 35px;
+    }
   }
   &__line {
     color: $text-color;
@@ -46,6 +104,13 @@
     font-size: 12px;
     justify-content: space-between;
     line-height: 16px;
+    @media screen and (min-width: $tablet-size) {
+      border-bottom: 1px solid $border-dark-color;
+      font-size: 16px;
+      line-height: 16px;
+      padding-bottom: 5px;
+      &:not(:last-child) { margin-bottom: 10px; }
+    }
   }
   &__more {
     align-items: center;
