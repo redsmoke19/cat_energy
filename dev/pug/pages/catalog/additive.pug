@@ -2,32 +2,33 @@ section.s-additive
 	.container
 		.additive
 			h2.additive__title Дополнительные товары
-			ul.additive__list.goods
-				li.goods__item
-					h3.goods__title Сахарозаменитель
-					.goods__wrapper
-						span.goods__cost 1 упаковка (100 г)
-						span.goods__cost 100 р
-					button.button Заказать
-				li.goods__item
-					h3.goods__title Питьевая вода
-					.goods__wrapper
-						span.goods__cost 5 литров
-						span.goods__cost 50 р
-					button.button Заказать
-				li.goods__item
-					h3.goods__title Молоко
-					.goods__wrapper
-						span.goods__cost 1 литр
-						span.goods__cost 100 р
-					button.button Заказать
-				li.goods__item
-					h3.goods__title Витамины
-					.goods__wrapper
-						span.goods__cost 1 упаковка (30 г)
-						span.goods__cost 300 р
-					button.button Заказать
-			.additive__gift
-				+icon('icon-gift','icon-gift additive__icon','55','60')
-				p.additive__offer Закажите все и получите чехол для кота в подарок!
+			.additive__inner
+				ul.additive__list.goods
+					li.goods__item
+						h3.goods__title Сахарозаменитель
+						.goods__wrapper
+							span.goods__cost 1 упаковка (100 г)
+							span.goods__cost 200 р
+						button.button.goods__button Заказать
+					li.goods__item
+						h3.goods__title Питьевая вода
+						.goods__wrapper
+							span.goods__cost 5 литров
+							span.goods__cost 50 р
+						button.button.goods__button Заказать
+					li.goods__item
+						h3.goods__title Молоко
+						.goods__wrapper
+							span.goods__cost 1 литр
+							span.goods__cost 100 р
+						button.button.goods__button Заказать
+					li.goods__item
+						h3.goods__title Витамины
+						.goods__wrapper
+							span.goods__cost 1 упаковка (30 г)
+							span.goods__cost 300 р
+						button.button.goods__button Заказать
+				.additive__gift
+					+icon('icon-gift','icon-gift additive__icon','55','60')
+					p.additive__offer Закажите все и получите чехол для кота в подарок!
 	include ../index/contacts

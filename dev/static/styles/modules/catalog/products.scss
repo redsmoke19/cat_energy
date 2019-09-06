@@ -1,5 +1,18 @@
+.catalog-page {
+  .main-nav__link {
+    color: $headline-color;
+    &::after { background-color: $bg-green-color; }
+  }
+}
+
 .s-catalog {
   margin-bottom: 30px;
+  @media screen and (min-width: $tablet-size) {
+    margin-bottom: 70px;
+  }
+  @media screen and (min-width: $desktop-size) {
+    margin-bottom: 80px;
+  }
 }
 
 .catalog {
@@ -10,8 +23,11 @@
     padding: 30px 0 30px 20px;
     @media screen and (min-width: $tablet-size) {
       border: none;
-      margin: 0 0 155px 0;
+      margin: 65px 0 155px 0;
       padding: 0;
+    }
+    @media screen and (min-width: $desktop-size) {
+      margin: 80px 0 155px 0;
     }
   }
   &__wrapper {
@@ -43,10 +59,18 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin: 0 0 140px 0;
+    margin: 0;
     min-height: 440px;
     padding: 0 38px 40px 38px;
     width: 46%;
+    &:not(:nth-last-child(-n+2)) {
+      margin: 0 0 140px 0;
+    }
+  }
+  @media screen and (min-width: $desktop-size) {
+    width: 21%;
+    &:not(:nth-last-child(-n+2)) { margin: 0; }
+    &:not(:nth-last-child(-n+4)) { margin-bottom: 140px; }
   }
   &__row {
     align-items: center;
@@ -117,6 +141,8 @@
   }
   &--more {
     @media screen and (min-width: $tablet-size) {
+      background-color: $white;
+      box-shadow: 0 0 0 1px $border-color;
       justify-content: space-between;
     }
   }
@@ -126,6 +152,16 @@
     flex-direction: column;
     padding-top: 25px;
     min-height: 184px;
+    @media screen and (min-width: $tablet-size) {
+      height: 100%;
+      padding-top: 55px;
+    }
+  }
+  &__icon {
+    @media screen and (min-width: $tablet-size) {
+      @include size(60px);
+      opacity: 0.2;
+    }
   }
   &__show-more {
     color: $headline-color;
@@ -135,16 +171,32 @@
     line-height: 20px;
     margin: 25px 0 10px 0;
     text-transform: uppercase;
+    @media screen and (min-width: $tablet-size) {
+      font-size: 20px;
+      line-height: 23px;
+      margin: 50px 0 30px 0;
+      max-width: 140px;
+      text-align: center;
+    }
   }
   &__footnote {
     color: $text-color;
     font-family: $text-font;
     font-size: 12px;
     line-height: 16px;
+    @media screen and (min-width: $tablet-size) {
+      font-size: 16px;
+      text-align: center;
+    }
   }
   &__button {
     color: $text-color;
     background-color: $bg-lightgrey-color;
     margin-top: auto;
+    @media screen and (min-width: $tablet-size) {
+      font-size: 16px;
+      height: 40px;
+      line-height: 20px;
+    }
   }
 }
