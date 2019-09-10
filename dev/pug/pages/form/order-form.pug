@@ -1,0 +1,30 @@
+section.s-order-form
+    .container
+        .order-form
+            h1.title.order-form__title Подбор программы
+            p.order-form__description Заполните анкету и мы подберем программу питания для вашего кота
+            form.form
+                fieldset.form__group
+                    legend.visually-hidden Заполните информацию о коте
+                    ul.form__list
+                        li.form__item
+                            label.form__label(for="catName") Имя:*
+                            input.form__input(type="text" name="catname" id="catName" placeholder="Барсик" required)
+                        li.form__item
+                            label.form__label(for="catWeight") Вес (кг):*
+                            input.form__input(type="number" name="catweight" id="catWeight" value="7" required)
+                        li.form__item
+                            label.form__label(for="catAge") Возраст (лет):
+                            input.form__input(type="number" name="catage" id="catAge" value="7" required)
+                fieldset.form__group
+                    legend.visually-hidden Выберете программу для кота
+                    ul.form__list
+                        li.form__item
+                            input(type="radio" name="chooseprogram" value="slim" id="programSlim" checked)
+                            label(for="programSlim") Похудение
+                        li.form__item
+                            input(type="radio" name="chooseprogram" value="massgain" id="massGain")
+                            label(for="massGain") Набор массы
+                        li.form__item
+                            input(type="radio" name="chooseprogram" value="advice" id="needAdvice")
+                            label(for="needAdvice") Не знаю (Нужен ваш совет)

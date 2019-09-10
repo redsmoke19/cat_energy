@@ -1,2 +1,8 @@
 @import "products";
 @import "additive";
+
+.catalog-page {
+  .s-contacts {
+    background-color: $bg-lightgrey-color;
+  }
+}

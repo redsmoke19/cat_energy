@@ -198,5 +198,7 @@
       height: 40px;
       line-height: 20px;
     }
+    &:hover { background-color: #ebebeb; }
+    &:active { color: rgba(#444444, 0.3); }
   }
 }

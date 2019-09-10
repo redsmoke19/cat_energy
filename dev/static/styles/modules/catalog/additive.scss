@@ -1,11 +1,12 @@
-.s-additive {
-  .s-contacts {
-    background-color: $bg-lightgrey-color;
-  }
-}
-
 .additive {
   position: relative;
+  @media screen and (min-width: $desktop-size) { margin-bottom: 85px; }
+  &__inner {
+    @media screen and (min-width: $desktop-size) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
   &__title {
     background-color: $white;
     color: $headline-color;
@@ -63,6 +64,19 @@
         background-image: url('/static/images/general/gift-photo-tablet@2x.jpg');
       }
     }
+    @media screen and (min-width: $desktop-size) {
+      background: $bg-green-color url('/static/images/general/gift-photo-desktop@1x.jpg') no-repeat center;
+      background-size: cover;
+      flex-basis: 20%;
+      flex-direction: column;
+      margin: 0;
+      min-height: auto;
+      width: auto;
+      @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background: $bg-green-color url('/static/images/general/gift-photo-desktop@2x.jpg') no-repeat center;
+        background-size: cover;
+      }
+    }
   }
   &__icon {
     fill: $white;
@@ -92,6 +106,10 @@
   @media screen and (min-width: $tablet-size) {
     margin-bottom: 70px;
   }
+  @media screen and (min-width: $desktop-size) {
+    flex-basis: 73%;
+    margin: 0;
+  }
   &__item {
     border-bottom: 1px solid $border-color;
     display: flex;
@@ -107,6 +125,14 @@
       flex-wrap: wrap;
       padding: 30px 40px;
     }
+    @media screen and (min-width: $desktop-size) {
+      align-items: center;
+      border-left: none;
+      border-right: none;
+      flex-direction: row;
+      min-height: auto;
+      padding: 15px 0;
+    }
   }
   &__title {
     color: $text-light-color;
@@ -121,12 +147,19 @@
       margin-bottom: 25px;
       text-transform: uppercase;
     }
+    @media screen and (min-width: $desktop-size) {
+      flex-basis: 33%;
+      margin: 0;
+    }
   }
   &__cost {
     @media screen and (min-width: $tablet-size) {
       font-size: 16px;
       line-height: 20px;
       &:first-child { margin-right: 50px; }
+    }
+    @media screen and (min-width: $desktop-size) {
+      &:first-child { margin: 0; }
     }
   }
   &__wrapper {
@@ -136,6 +169,9 @@
     font-size: 14px;
     justify-content: space-between;
     line-height: 14px;
+    @media screen and (min-width: $desktop-size) {
+      flex-basis: 33%;
+    }
   }
   &__button {
     @media screen and (min-width: $tablet-size) {
@@ -145,6 +181,8 @@
       height: 40px;
     }
     @media screen and (min-width: $desktop-size) {
+      flex-basis: 20%;
+      padding: 0;
     }
   }
 }
