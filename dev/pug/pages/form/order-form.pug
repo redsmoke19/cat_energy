@@ -6,7 +6,7 @@ section.s-order-form
             form.form
                 fieldset.form__group
                     legend.visually-hidden Заполните информацию о коте
-                    ul.form__list
+                    ul.form__list.form__list--cat-info
                         li.form__item
                             label.form__label(for="catName") Имя:*
                             input.form__input(type="text" name="catname" id="catName" placeholder="Барсик" required)
@@ -18,13 +18,43 @@ section.s-order-form
                             input.form__input(type="number" name="catage" id="catAge" value="7" required)
                 fieldset.form__group
                     legend.visually-hidden Выберете программу для кота
-                    ul.form__list
-                        li.form__item
-                            input(type="radio" name="chooseprogram" value="slim" id="programSlim" checked)
+                    ul.form__list.form__list--program
+                        li.form__item.form__item--radio
+                            input.visually-hidden.form__radio(type="radio" name="chooseprogram" value="slim" id="programSlim" checked)
                             label(for="programSlim") Похудение
+                        li.form__item.form__item--radio
+                            input.visually-hidden.form__radio(type="radio" name="chooseprogram" value="massgain" id="massGain")
+                            label.form__label(for="massGain") Набор массы
+                        li.form__item.form__item--radio
+                            input.visually-hidden.form__radio(type="radio" name="chooseprogram" value="advice" id="needAdvice")
+                            label.form__label(for="needAdvice") Не знаю (Нужен ваш совет)
+                fieldset.form__group
+                    legend.form__title Контактные данные (владельца кота)
+                    ul.form__list.form__list--cat-owner
                         li.form__item
-                            input(type="radio" name="chooseprogram" value="massgain" id="massGain")
-                            label(for="massGain") Набор массы
+                            label.form__label(for="email") E-mail:*
+                            input.form__input.form__input--email(type="email" name="email" id="email" placeholder="kuklachev@gmail.com")
                         li.form__item
-                            input(type="radio" name="chooseprogram" value="advice" id="needAdvice")
-                            label(for="needAdvice") Не знаю (Нужен ваш совет)
+                            label.form__label(for="phone") Телефон:*
+                            input.form__input.form__input--phone(type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90")
+                fieldset.form__group
+                    legend.form__title Комментарий
+                    textarea.form__textarea(name="comment" cols="5" rows="10" placeholder="Расскажите обо всех повадках кота")
+                fieldset.form__group
+                    legend.form__title Дополнительно
+                    ul.form__list.form__list--additionally
+                        li.form__item.form__item--checkbox
+                            input.visually-hidden.form__checkbox(type="checkbox" name="sweetener" id="sweetener" value="additionally" checked)
+                            label.form__label(for="sweetener") Сахарозаменитель
+                        li.form__item.form__item--checkbox
+                            input.visually-hidden.form__checkbox(type="checkbox" name="sweetener" id="water" value="additionally")
+                            label.form__label(for="water") Питьева вода
+                        li.form__item.form__item--checkbox
+                            input.visually-hidden.form__checkbox(type="checkbox" name="sweetener" id="milk" value="additionally")
+                            label.form__label(for="milk") Молоко
+                        li.form__item.form__item--checkbox
+                            input.visually-hidden.form__checkbox(type="checkbox" name="sweetener" id="vitamin" value="additionally")
+                            label.form__label(for="vitamin") Витамины
+                .form__bottom
+                    button.form__button.button(type="submit") Отправиль заявку
+                    span.form__footnote * — Обязательные поля
