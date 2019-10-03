@@ -4,46 +4,48 @@ section.s-order-form
             h1.title.order-form__title Подбор программы
             p.order-form__description Заполните анкету и мы подберем программу питания для вашего кота
             form.form(action="https://echo.htmlacademy.ru" method="post")
-                fieldset.form__group
-                    legend.visually-hidden Заполните информацию о коте
-                    ul.form__list.form__list--cat-info
-                        li.form__item
-                            label.form__label(for="catName") Имя:*
-                            input.form__input(type="text" name="catname" id="catName" placeholder="Барсик" required)
-                        li.form__item
-                            label.form__label(for="catWeight") Вес (кг):*
-                            input.form__input(type="number" name="catweight" id="catWeight" value="7" required)
-                        li.form__item
-                            label.form__label(for="catAge") Возраст (лет):
-                            input.form__input(type="number" name="catage" id="catAge" value="7" required)
-                fieldset.form__group
-                    legend.visually-hidden Выберете программу для кота
-                    ul.form__list.form__list--program
-                        li.form__item.form__item--radio
-                            input.visually-hidden.form__radio(type="radio" name="chooseprogram" value="slim" id="programSlim" checked)
-                            label.form__label.form__label--radio(for="programSlim") Похудение
-                        li.form__item.form__item--radio
-                            input.visually-hidden.form__radio(type="radio" name="chooseprogram" value="massgain" id="massGain")
-                            label.form__label.form__label--radio(for="massGain") Набор массы
-                        li.form__item.form__item--radio
-                            input.visually-hidden.form__radio(type="radio" name="chooseprogram" value="advice" id="needAdvice")
-                            label.form__label.form__label--radio(for="needAdvice") Не знаю (Нужен ваш совет)
+                .form__wrapper--top
+                    fieldset.form__group.form__group--top
+                        legend.visually-hidden Заполните информацию о коте
+                        ul.form__list.form__list--cat-info
+                            li.form__item
+                                label.form__label(for="catName") Имя:*
+                                input.form__input(type="text" name="catname" id="catName" placeholder="Барсик" required)
+                            li.form__item
+                                label.form__label(for="catWeight") Вес (кг):*
+                                input.form__input.form__input--number(type="number" name="catweight" id="catWeight" value="7" required)
+                            li.form__item
+                                label.form__label(for="catAge") Возраст (лет):
+                                input.form__input.form__input--number(type="number" name="catage" id="catAge" value="7" required)
+                    fieldset.form__group.form__group--top
+                        legend.visually-hidden Выберете программу для кота
+                        ul.form__list.form__list--program
+                            li.form__item.form__item--radio
+                                input.visually-hidden.form__radio(type="radio" name="chooseprogram" value="slim" id="programSlim" checked)
+                                label.form__label.form__label--radio(for="programSlim") Похудение
+                            li.form__item.form__item--radio
+                                input.visually-hidden.form__radio(type="radio" name="chooseprogram" value="massgain" id="massGain")
+                                label.form__label.form__label--radio(for="massGain") Набор массы
+                            li.form__item.form__item--radio
+                                input.visually-hidden.form__radio(type="radio" name="chooseprogram" value="advice" id="needAdvice")
+                                label.form__label.form__label--radio(for="needAdvice") Не знаю (Нужен ваш совет)
                 fieldset.form__group
                     legend.form__title Контактные данные (владельца кота)
                     ul.form__list.form__list--cat-owner
-                        li.form__item
+                        li.form__item.form__item--cat-owner
                             label.form__label(for="email") E-mail:*
                             input.form__input.form__input--email(type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required)
                             +icon('icon-mail','form__icon form__icon--mail','17','13')
-                        li.form__item
+                        li.form__item.form__item--cat-owner
                             label.form__label(for="phone") Телефон:*
                             input.form__input.form__input--phone(type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required)
                             +icon('icon-phone','form__icon form__icon--phone','20','20')
                 fieldset.form__group
                     legend.form__title Комментарий
-                    textarea.form__textarea(name="comment" cols="1" rows="1" placeholder="Расскажите обо всех повадках кота")
+                    .form__textarea--inner
+                        textarea.form__textarea(name="comment" cols="1" rows="1" placeholder="Расскажите обо всех повадках кота")
                 fieldset.form__group
-                    legend.form__title Дополнительно
+                    legend.form__title.form__title--small Дополнительно
                     ul.form__list.form__list--additionally
                         li.form__item.form__item--checkbox
                             input.visually-hidden.form__checkbox(type="checkbox" name="sweetener" id="sweetener" value="additionally" checked)
