@@ -63,7 +63,7 @@
         }
       }
       &::before {
-        background-image: url("/static/images/general/clock-1x.png")
+        background-image: url("../images/general/clock-1x.png")
       }
     }
     &--powder {
@@ -73,7 +73,7 @@
         }
       }
       &::before {
-        background-image: url("/static/images/general/powder-1x.png")
+        background-image: url("../images/general/powder-1x.png")
       }
     }
     &--knife {
@@ -83,7 +83,7 @@
         }
       }
       &::before {
-        background-image: url("/static/images/general/knife-1x.png")
+        background-image: url("../images/general/knife-1x.png")
       }
     }
     &--leaflet {
@@ -93,28 +93,28 @@
         }
       }
       &::before {
-        background-image: url("/static/images/general/leaflet-1x.png")
+        background-image: url("../images/general/leaflet-1x.png")
       }
     }
     @media screen and (-webkit-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       &--clock {
         &::before {
-          background-image: url("/static/images/general/clock-2x.png")
+          background-image: url("../images/general/clock-2x.png")
         }
       }
       &--powder {
         ::before {
-          background-image: url("/static/images/general/powder-2x.png")
+          background-image: url("../images/general/powder-2x.png")
         }
       }
       &--knife {
         &::before {
-          background-image: url("/static/images/general/knife-2x.png")
+          background-image: url("../images/general/knife-2x.png")
         }
       }
       &--leaflet {
         &::before {
-          background-image: url("/static/images/general/leaflet-2x.png")
+          background-image: url("../images/general/leaflet-2x.png")
         }
       }
     }

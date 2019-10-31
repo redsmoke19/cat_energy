@@ -1,7 +1,7 @@
 .s-banner {
   margin-bottom: 20px;
   &::before {
-    background: #65a93c url("/static/images/general/index-background-mobile1x.jpg") no-repeat center;
+    background: #65a93c url("../images/general/index-background-mobile1x.jpg") no-repeat center;
     content: "";
     height: 305px;
     opacity: 0.9;
@@ -9,19 +9,19 @@
     width: 100%;
     z-index: -1;
     @media screen and (-webkit-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: #65a93c url("/static/images/general/index-background-mobile2x.jpg") no-repeat center;
+      background: #65a93c url("../images/general/index-background-mobile2x.jpg") no-repeat center;
       background-size: contain;
     }
     @media screen and (min-width: $tablet-size) { display: none; }
     @media screen and (min-width: $desktop-size) {
-      background: #65a93c url("/static/images/general/index-background-desktop1x.jpg") no-repeat right;
+      background: #65a93c url("../images/general/index-background-desktop1x.jpg") no-repeat right;
       display: block;
       height: 696px;
       width: 50%;
       right: 0;
       top: -88px;
       @media screen and (-webkit-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background: url("/static/images/general/index-background-desktop2x.jpg") no-repeat right;
+        background: url("../images/general/index-background-desktop2x.jpg") no-repeat right;
         background-size: cover;
       }
     }

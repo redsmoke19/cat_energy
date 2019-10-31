@@ -42,7 +42,7 @@
   }
   &__gift {
     align-items: center;
-    background: $bg-green-color url('/static/images/general/gift-photo-mobile@1x.jpg') no-repeat center;
+    background: $bg-green-color url('../images/general/gift-photo-mobile@1x.jpg') no-repeat center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -51,21 +51,21 @@
     min-height: 290px;
     width: 100%;
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url('/static/images/general/gift-photo-mobile@2x.jpg');
+      background-image: url('../images/general/gift-photo-mobile@2x.jpg');
     }
     @media screen and (min-width: $tablet-size) {
-      background: $bg-green-color url('/static/images/general/gift-photo-tablet@1x.jpg') no-repeat center;
+      background: $bg-green-color url('../images/general/gift-photo-tablet@1x.jpg') no-repeat center;
       background-size: cover;
       flex-direction: row;
       justify-content: space-around;
       margin-bottom: 75px;
       min-height: 200px;
       @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url('/static/images/general/gift-photo-tablet@2x.jpg');
+        background-image: url('../images/general/gift-photo-tablet@2x.jpg');
       }
     }
     @media screen and (min-width: $desktop-size) {
-      background: $bg-green-color url('/static/images/general/gift-photo-desktop@1x.jpg') no-repeat center;
+      background: $bg-green-color url('../images/general/gift-photo-desktop@1x.jpg') no-repeat center;
       background-size: cover;
       flex-basis: 20%;
       flex-direction: column;
@@ -73,7 +73,7 @@
       min-height: auto;
       width: auto;
       @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background: $bg-green-color url('/static/images/general/gift-photo-desktop@2x.jpg') no-repeat center;
+        background: $bg-green-color url('../images/general/gift-photo-desktop@2x.jpg') no-repeat center;
         background-size: cover;
       }
     }

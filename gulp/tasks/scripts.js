@@ -29,14 +29,12 @@ module.exports = function () {
     });
 
     $.gulp.task('js:build', () => {
-        return $.gulp.src([scriptsPATH.input + '*.js',
-            '!' + scriptsPATH.input + 'libs.min.js'])
+        return $.gulp.src([scriptsPATH.input + 'jquery-3.3.1.min.js'])
             .pipe($.gulp.dest(scriptsPATH.ouput))
     });
 
     $.gulp.task('js:build-min', () => {
-        return $.gulp.src([scriptsPATH.input + '*.js',
-            '!' + scriptsPATH.input + 'libs.min.js'])
+        return $.gulp.src([scriptsPATH.input + 'main.js'])
             .pipe(concat('main.min.js'))
             .pipe(uglify())
             .pipe($.gulp.dest(scriptsPATH.ouput))
